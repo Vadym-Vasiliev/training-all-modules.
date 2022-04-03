@@ -14,53 +14,108 @@
     
     <div class="container">
         <section class="section">
-           <form action="">
+            
+           <form class="form">
+            <h1>Формa</h1>
 
     
-               <label for="name">Імя</label>
-               <input type="text" name="text" id="name">
-               <br>
+               
+               <div class="form-group">
+                    <label for="name">Імя</label>
+                    <input type="text" name="text" id="name" placeholder="Іван Іванович" autofocus>
+               </div>
 
-               <label for="tel">Телефон</label>
-               <input type="tel" name="tel" id="tel">
-               <br>
+               
+               <div class="form-group">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+380">
+               </div>
 
-               <label for="mail">Пошта</label> 
-               <input type="email" name="mail" id="mail"> 
-               <br>
+              
+               <div class="form-group">
+                    <label for="mail">Пошта</label>
+                    <input type="email" name="mail" id="mail" placeholder="@mail.com">
+               </div>   
 
 
  
                
-               <div role="group">
-                <input type="checkbox" name="check" value="html" id="html">
-                <label for="html">HTML</label>
-                
-                <input type="checkbox" name="check" value="css" id="css">
-                <label for="css">CSS</label>
-                
-                <input type="checkbox" name="check" value="js" id="js">
-                <label for="js">JavaScript</label>
+               <div role="group" class="group">
+                   <h2 class="group-title">Форма докладу</h2>
+                        <ul class="check-options">
+                            <li>
+                                <input type="checkbox" name="check" value="html" id="html">
+                                <label for="html">HTML</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="check" value="css" id="css">
+                                <label for="css">CSS</label>
+                            </li>
+                            
+                            <li>
+                                <input type="checkbox" name="check" value="js" id="js">
+                                <label for="js">JavaScript</label>
+                            </li>
+                        </ul>
                </div>
 
 
-               <div role="group"> 
-                <input type="radio" name="experience " value="junior" id="junior">
-                <label for="junior">Junior</label>
+               <div role="group" class="group"> 
+                   <h2 class="group-title">Рівень вашої експертизи</h2>
+                        <ul class="experience-options">
+                            <li>
+                                <input type="radio" name="experience " value="junior" id="junior">
+                                <label for="junior">Junior</label>
+                            </li>
+                            
+                            <li>
+                                <input type="radio" name="experience " value="middle" id="middle">
+                                <label for="middle">Middle</label>
+                            </li>
+                            
+                           <li>
+                                <input type="radio" name="experience " value="senior" id="senior">
+                                <label for="senior">Senior</label>
+                           </li>
+                        </ul>
+               </div>   
 
-                <input type="radio" name="experience " value="middle" id="middle">
-                <label for="middle">Middle</label>
+               <!-- can i use (сайт де можна глянути в яких браузерах підтримується) -->
+               <div class="form-group">
+                <label for="date">Дата докладу</label>
+                <input type="datetime-local" name="time" id="date">
+               </div>
+               <!-- min="2022-04-12T10:00" max="2022-04-14T10:00" -->
 
-                <input type="radio" name="experience " value="senior" id="senior">
-                <label for="senior">Senior</label>
+               
+               <div class="form-group">
+                <label for="pdf">Загрузити копію докладу в pdf</label>
+                <input type="file" name="pdf" id="pdf">
                </div>
 
-               <br>
+               
+               <div class="form-group">
+                <label for="comment">Залишити коментарій</label>
+                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Коментарій"></textarea>
+               </div>
+
+
+               
+               <div class="form-group check">
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Згідний на все, за їжу.</label>
+
+               </div>
+               
                <button type="submit" class="btn">Залишити заявку</button>
 
            </form>
         </section>
     </div>
+
+    <!-- autofocus - при загрузці сторінки одразу вказує фокус на форму -->
+    <!-- autocomplete - дає підказку від браузера користовачу, який був введений раніше -->
 \
  
 </body>
