@@ -237,3 +237,7 @@ h1{
     padding-left: 10px;
     padding-top: 10px;  
 }
+
+.form-group.check .policy{
+    margin-right: 6px;
+}
