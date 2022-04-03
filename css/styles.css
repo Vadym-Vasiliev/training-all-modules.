@@ -4,6 +4,16 @@
     --cubic-bezier:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit ;
+}
+
 body{
     background-color: palevioletred;
     color: white;
@@ -24,6 +34,8 @@ a{
 button{
 cursor: pointer;
 }
+
+
 
 
 .container{
@@ -124,13 +136,57 @@ h1{
 }
 
 .form-icon{
-    fill: currentColor;
+    fill: currentColor; 
 }
 
 .form-input:focus ~ .form-icon{
     color: white;
 }
 
+/* check */
+
+.check-options .check{
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    
+}
+
+.label-check{
+    display:block;
+    margin: 0;
+    font-size: 20px;
+
+}
+
+.icon-check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+
+    border: 2px solid #ccc;
+  
+}
+
+.check:checked ~ .icon-check{
+    background-color: skyblue;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    border-color: skyblue;
+}
+
+/* radio check */
 
 
 
@@ -163,7 +219,7 @@ h1{
 
 
 
-.check-options label,
+
 .experience-options label
 {
     font-size: 20px;
