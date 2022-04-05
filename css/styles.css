@@ -186,15 +186,14 @@ h1{
     width: 15px;
     height: 15px;
     border-radius: 2px;
-
     border: 2px solid #ccc;
-  
-}
+}   
 
 
 
 .check:checked ~ .icon-check,
-.policy:checked ~ .icon-check{
+.policy:checked ~ .icon-check,
+.radio:checked ~ .icon-check{
     background-color: skyblue;
     background-image: url(../img/check.svg);
     background-repeat: no-repeat;
@@ -205,7 +204,8 @@ h1{
 }
 
 .check:focus ~ .icon-check,
-.policy:focus ~ .icon-check{
+.policy:focus ~ .icon-check,
+.radio:focus ~ .icon-check{
     border-color: skyblue;
 }
 
@@ -231,6 +231,24 @@ h1{
 
 
 /* radio check */
+
+
+.radio{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.icon-check.icon{
+    border-radius: 50%;
+}
 
 
 
@@ -267,7 +285,7 @@ h1{
 .experience-options label
 {
     font-size: 20px;
-    margin-left: 10px;
+    
 }
 
 .form-group.check{
