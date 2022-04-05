@@ -56,13 +56,20 @@ cursor: pointer;
     border: 2px solid gray;
 
     background-color: white;
-    color: palevioletred;
+    color: skyblue;
     outline: none;
+
+    transition: color 250ms linear;
     
 }
 
 .btn:focus{
     border-color: skyblue;
+}
+
+.btn:hover,
+.btn:focus{
+    color: palevioletred;
 
 }
 
